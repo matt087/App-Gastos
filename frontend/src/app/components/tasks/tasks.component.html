@@ -1,0 +1,23 @@
+<div class="card">
+    <div class="card-header">
+        <h1>Listado de Personas</h1>
+    </div>
+    <div class="card-body" *ngIf="tasks && tasks.length > 0">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Cedula</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr *ngFor="let task of tasks">
+                    <td>{{task.cedula}}</td>
+                    <td>{{task.nombre}}</td>
+                    <td>{{task.date}}</td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

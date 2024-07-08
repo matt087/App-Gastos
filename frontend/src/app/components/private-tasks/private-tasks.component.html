@@ -1,0 +1,27 @@
+<div class="card">
+    <div class="card-header">
+        <h1>Listado Detallado</h1>
+    </div>
+    <div class="card-body" *ngIf="privateTask && privateTask.length > 0">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Cedula</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Ingresos</th>
+                    <th scope="col">Egresos</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr *ngFor="let task of privateTask">
+                    <td>{{task.cedula}}</td>
+                    <td>{{task.nombre}}</td>
+                    <td>{{task.email}}</td>
+                    <td>{{task.ingreso}}</td>
+                    <td>{{task.egreso}}</td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

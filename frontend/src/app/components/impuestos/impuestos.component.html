@@ -1,0 +1,69 @@
+<h1 class="text-center text-primary">Calculadora del Impuesto a la Renta</h1>
+<div class="formulario">
+    <div class="form-group">
+        <form (ngSubmit)="enviar()" #impuesto="ngForm">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="input-group">
+                            <label for="Cedula" class="form-label" aria-label="Ingreso de la cedula">Cedula:</label>
+                            <input type="text" class="form-control" id="Cedula" name="Cedula" required [(ngModel)]="formData.Cedula" required minlength="10" maxlength="10" #cedula="ngModel">
+                        </div>
+                        <div class="alert alert-danger mt-2" [hidden]="cedula.valid || cedula.pristine">
+                            La cédula es obligaria y de 10 dígitos.
+                        </div>
+                        <div class="input-group">
+                            <label for="Ingreso" class="form-label">Ingreso anual:</label>
+                            <input type="number" class="form-control" id="Ingreso" name="Ingreso" [(ngModel)]="formData.Ingreso" required #ingreso="ngModel">
+                        </div>
+                        <div class="alert alert-danger mt-2" [hidden]="ingreso.valid || ingreso.pristine">
+                        El ingreso es obligario.
+                        </div>
+                        <label class="title">Deducciones por Gastos Personales</label>
+                        <div class="input-group">
+                            <label for="Alimentacion" class="form-label">Alimentación:</label>
+                            <input type="number" class="form-control" id="Alimentacion" name="Alimentacion" [(ngModel)]="formData.Alimentacion" required max="3809.65" #alimentacion="ngModel">
+                        </div>
+                        <div class="alert alert-danger mt-2" [hidden]="alimentacion.valid || alimentacion.pristine">
+                            El gasto es obligario y tiene un límite de 3809.65$.
+                        </div>
+                        <div class="input-group">
+                            <label for="Vivienda" class="form-label">Vivienda:</label>
+                            <input type="number" class="form-control" id="Vivienda" name="Vivienda"  [(ngModel)]="formData.Vivienda" required max="3809.65" #vivienda="ngModel">
+                        </div>
+                        <div class="alert alert-danger mt-2" [hidden]="vivienda.valid || vivienda.pristine">
+                            El gasto es obligario y tiene un límite de 3809.65$.
+                        </div>
+                        <div class="input-group">
+                            <label for="Educacion" class="form-label">Educación:</label>
+                            <input type="number" class="form-control" id="Educacion" name="Educacion"  [(ngModel)]="formData.Educacion" required max="3809.65" #educacion="ngModel">
+                        </div>
+                        <div class="alert alert-danger mt-2" [hidden]="educacion.valid || educacion.pristine">
+                            El gasto es obligario y tiene un límite de 3809.65$.
+                        </div>
+                        <div class="input-group">
+                            <label for="Vestimenta" class="form-label">Vestimenta:</label>
+                            <input type="number" class="form-control" id="Vestimenta" name="Vestimenta"  [(ngModel)]="formData.Vestimenta" required max="3809.65" #vestimenta="ngModel">
+                        </div>
+                        <div class="alert alert-danger mt-2" [hidden]="vestimenta.valid || vestimenta.pristine">
+                            El gasto es obligario y tiene un límite de 3809.65$.
+                        </div>
+                        <div class="input-group">
+                            <label for="Salud" class="form-label">Salud:</label>
+                            <input type="number" class="form-control" id="Salud" name="Salud" [(ngModel)]="formData.Salud" required max="15238.60" #salud="ngModel">
+                        </div>
+                        <div class="alert alert-danger mt-2" [hidden]="salud.valid || salud.pristine">
+                            El gasto es obligario y tiene un límite de 15238.60$.
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-2" [disabled]="impuesto.invalid">
+                            Enviar
+                        </button>
+                    </div>
+                </div>        
+        </form>
+    </div>
+</div>
+
+<div>
+    <h3>Impuesto</h3>
+    <p>Impuesto a la renta: {{ renta }}$</p>
+</div>

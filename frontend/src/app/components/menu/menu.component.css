@@ -1,0 +1,42 @@
+nav{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease-in;
+    color: #0069d9;
+
+}
+
+nav a:hover{
+    color: #148ea1;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.login a{
+    color: #067b8d;
+    margin-right: 10px;
+    transition: 0.3s ease-in;
+
+}
+
+.login a:hover{
+    color: #148ea1;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.main-div{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

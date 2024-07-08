@@ -1,0 +1,42 @@
+[
+  {
+    "ruc": "1111111111111",
+    "ingresos": 80000,
+    "gastos": 15000,
+    "fBasica": 0,
+    "imponible": 65000,
+    "excedente": 65000,
+    "pExcedente": 19500,
+    "impuestoRenta": 27972
+  },
+  {
+    "ruc": "1702991363001",
+    "ingresos": 70000,
+    "gastos": 15000,
+    "fBasica": 0,
+    "imponible": 55000,
+    "excedente": 55000,
+    "pExcedente": 13750,
+    "impuestoRenta": 18518
+  },
+  {
+    "ruc": "1702991363001",
+    "ingresos": 70000,
+    "gastos": 15000,
+    "fBasica": 0,
+    "imponible": 55000,
+    "excedente": 55000,
+    "pExcedente": 13750,
+    "impuestoRenta": 18518
+  },
+  {
+    "ruc": "1702991363001",
+    "ingresos": 65000,
+    "gastos": 13000,
+    "fBasica": 0,
+    "imponible": 52000,
+    "excedente": 52000,
+    "pExcedente": 13000,
+    "impuestoRenta": 17768
+  }
+]

@@ -1,0 +1,42 @@
+<div class="formulario">
+    <div class="form-group">
+        <form (ngSubmit)="enviar()" #gasto="ngForm">
+                <h1 class="text-center text-primary">Facturas Gastos</h1>
+                <div class="card">
+                    <div class="card-body"> 
+                        <div class="input-group">
+                            <label for="ruc" class="form-label">Ruc</label>
+                            <input type="text" class="form-control" id="ruc" placeholder="Ingrese su ruc" name="ruc"  [(ngModel)]="formData.ruc" required minlength="10" maxlength="13" #ruc="ngModel">
+                        </div>
+                        <div class="alert alert-danger mt-2" [hidden]="ruc.valid || ruc.pristine">
+                            El ruc es obligario y de 13 dígitos.
+                        </div>
+                        <div class="input-group">
+                            <label for="valor" class="form-label">Factura</label>
+                            <input type="number" class="form-control" id="valor" placeholder="Ingrese el valor de la factura" name="valor" [(ngModel)]="formData.valor" required #valor="ngModel">
+                        </div>
+                        <div class="alert alert-danger mt-2" [hidden]="valor.valid || valor.pristine">
+                            El valor es obligario.
+                        </div>
+                        <div class="input-group">
+                            <label for="gasto" class="form-label">Gasto </label>
+                            <select class="form-select" aria-label="gasto" name="gasto" [(ngModel)]="formData.tipo" required #tipo="ngModel">
+                                <option selected>Escoja el tipo de gasto</option>
+                                <option value="Salud">Salud</option>
+                                <option value="Vivienda">Vivienda</option>
+                                <option value="Educación">Educación</option>
+                                <option value="Ninguno">Ninguno</option>
+                            </select>
+                        </div>
+                        <div class="alert alert-danger mt-2" [hidden]="tipo.valid || tipo.pristine">
+                            El tipo es obligario.
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-2">
+                            Agregar
+                        </button>
+                    </div>
+                </div>
+            
+        </form>
+    </div>  
+</div>

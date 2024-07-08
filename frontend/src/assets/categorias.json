@@ -1,0 +1,38 @@
+[
+  {
+    "categoria": "Vivienda",
+    "descripcion": "Corresponde a los desembolsos destinados a la urbanización, construcción, remodelación y mantenimiento de viviendas.",
+    "informacionAdicional": "Incluye gastos en alquiler, hipoteca, servicios básicos y reparaciones.",
+    "imagen": "../../../../assets/vivienda.png",
+    "alt": "Imagen de vivienda"
+  },
+  {
+    "categoria": "Salud",
+    "descripcion": "Corresponde a los desembolsos destinados a la prevención, diagnóstico, tratamiento y rehabilitación de enfermedades y condiciones médicas.",
+    "informacionAdicional": "Incluye gastos en consultas médicas, medicamentos, hospitalización y seguros de salud.",
+    "imagen": "../../../../assets/salud.png",
+    "alt": "Imagen de hospital"
+  },
+  {
+    "categoria": "Educación",
+    "descripcion": "Corresponde a los desembolsos destinados a la instrucción formal e informal de individuos a diferentes niveles educativos.",
+    "informacionAdicional": "Incluye gastos en matrículas, colegiaturas, materiales educativos y cursos de capacitación.",
+    "imagen": "../../../../assets/educacion.png",
+    "alt": "Imagen de educación"
+  },
+  {
+    "categoria": "Alimentación",
+    "descripcion": "Corresponde a los desembolsos destinados a la adquisición de alimentos y bebidas necesarios para la nutrición y bienestar de las personas.",
+    "informacionAdicional": "Incluye gastos en compras de comestibles, restaurantes y otros establecimientos de venta de alimentos.",
+    "imagen": "../../../../assets/alimentacion.png",
+    "alt": "Imagen de alimentos"
+  },
+  {
+    "categoria": "Transporte",
+    "descripcion": "Corresponde a los desembolsos destinados a la movilidad de las personas y bienes.",
+    "informacionAdicional": "Incluye gastos en transporte público y privado, mantenimiento de vehículos y costos de operación.",
+    "imagen": "../../../../assets/transporte.png",
+    "alt": "Imagen de transporte"
+  }
+]
+

@@ -1,0 +1,47 @@
+body{
+    padding: 0;
+    margin: 0;
+   }
+   form{
+    max-width: 25em;
+    margin: 1em auto;
+   }
+
+.formulario{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-group{
+    margin-bottom: 5px;
+}
+.form-group{
+    width: 30%;
+}
+.form-label
+{
+    width: 30%;
+}
+
+.boton{
+    margin-top: 20px;
+}
+
+.title{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color:  #0069d9;
+}
+
+.res{
+    margin-top: 15px; 
+    display: flex;
+    gap: 10px;
+}
+
+.res h2{
+    font-size: 20px;
+
+}
